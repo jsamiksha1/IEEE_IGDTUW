@@ -26,6 +26,7 @@
   <!----------------Title------------------->
   <title>Achievements - IEEE IGDTUW</title>
 
+
 </head>
 
 
@@ -43,16 +44,19 @@
 
   <div class="years">
     <ul>
-      <li><a href="#award-ceremony-2022">2022</a></li>
-      <li><a href="#award-ceremony-2020">2020</a></li>
-      <li><a href="#award-ceremony-2019">2019</a></li>
-      <li><a href="#award-ceremony-2018">2018</a></li>
+      <li><a href="#awards-all" onclick="resetAll()">ALL</a></li>
+      <li><a href="#award-ceremony-2022" onclick="pagination2022()">2022</a></li>
+      <li><a href="#award-ceremony-2020" onclick="pagination2020()">2020</a></li>
+      <li><a href="#award-ceremony-2019" onclick="pagination2019()">2019</a></li>
+      <li><a href="#award-ceremony-2018" onclick="pagination2018()">2018</a></li>
     </ul>
   </div>
 
+  
+
   <!-------------------------Awards section-------------------------->
-  <section>
-    <div class="container" id="award-ceremony-2022">
+  <section id="awards-all">
+    <div class="container hide-when-2020 hide-when-2019 hide-when-2018" id="award-ceremony-2022">
       <!-------------------------Row heading----------------------------->
       <p class="row-sub-heading">IEEE Delhi Section Award Ceremony 2022</p>
       <div class="row">
@@ -113,7 +117,7 @@
 
 
 
-    <div class="container" id="award-ceremony-2020">
+    <div class="container hide-when-2022 hide-when-2019 hide-when-2018" id="award-ceremony-2020">
       <!-------------------------Row heading----------------------------->
       <p class="row-sub-heading">IEEE Delhi Section Award Ceremony 2020</p>
       <div class="row">
@@ -178,7 +182,7 @@
 
 
 
-    <div class="container">
+    <div class="container hide-when-2022 hide-when-2020 hide-when-2019 hide-when-2018">
       <!-------------------------Row heading----------------------------->
       <p class="row-sub-heading">IEEE Delhi Section Student Network (SSN) Award</p>
       <div class="row">
@@ -239,10 +243,10 @@
 
 
 
-    <div class="container">
+    <div class="container hide-when-2022 hide-when-2020 hide-when-2019 hide-when-2018">
       <!-------------------------Row heading----------------------------->
       <p class="row-sub-heading">IEEE Delhi Section WIE Affinity Group Award</p>
-      <div class="row">
+      <div class="row" >
         <div class="col-md-4 mt-4">
           <div class="card profile-card-5">
             <div class="card-img-block">
@@ -286,7 +290,7 @@
 
 
 
-    <div class="container" id="award-ceremony-2019">
+    <div class="container hide-when-2022 hide-when-2020 hide-when-2018" id="award-ceremony-2019">
       <!-------------------------Row heading----------------------------->
       <p class="row-sub-heading">IEEE Delhi Section Award Ceremony 2019</p>
       <div class="row">
@@ -354,7 +358,7 @@
 
 
 
-    <div class="container">
+    <div class="container hide-when-2022 hide-when-2020 hide-when-2019 hide-when-2018">
       <!-------------------------Row heading----------------------------->
       <p class="row-sub-heading">The following members were appreciated for their enormous contribution in IEEE Delhi Section Student Network:</p>
       <div class="row">
@@ -403,7 +407,7 @@
 
 
 
-    <div class="container" id="award-ceremony-2018">
+    <div class="container hide-when-2022 hide-when-2020 hide-when-2019" id="award-ceremony-2018">
       <!-------------------------Row heading----------------------------->
       <p class="row-sub-heading">IEEE Delhi Section Award Ceremony 2018</p>
       <div class="row">
@@ -468,6 +472,10 @@
 
 
   </section>
+
+
+<!--------------------- Achievements JS ----------------------->
+<script src="js/achievements.js"></script>
 
 </body>
 
