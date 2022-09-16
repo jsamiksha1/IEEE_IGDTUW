@@ -32,19 +32,19 @@
   color: #777C8D;
 }
 
-.years {
-  list-style-type: none;
+
+.parent {
+  margin: 1rem;
+  padding: 2rem 2rem;
   text-align: center;
-  margin: 0;
-  padding:0;
 }
-
-.years li {
+.child {
   display: inline-block;
-  font-size: 20px;
-}
+  padding: 1rem 1rem;
+  margin: 2px;
+} 
 
-.years li a {
+.child a{
   text-decoration: none;
   font-family: 'Poppins';
   font-style: normal;
@@ -54,20 +54,56 @@
   text-align: center;
   color: #000000;
   padding: 6px 40px;
+  border-radius: 20px;
+  border: 1px solid black;
 }
 
-.years li a:hover {
+.child a:hover{
+  text-decoration: none;
   background: #6889FF;
   border-radius: 20px;
   color: #F5F5F5;
 }
 
-@media only screen and (max-width: 554px){
-  .years li a{
-    padding: 6px 30px;
+
+
+@media only screen and (max-width: 983px){
+  .subheading p{
+    font-size: 15px;
   }
 }
 
+@media only screen and (max-width: 817px){
+  .subheading p{
+    font-size: 10px;
+  }
+}
+  
+  @media only screen and (max-width: 279){
+    .subheading p{
+        font-size: 8px;
+    }
+  }
+      
+
+  @media only screen and (max-width: 586px){
+    .heading h{
+      font-size: 40px;
+    }
+  }
+      
+  @media only screen and (max-width: 450px){
+    .heading h{
+      font-size: 30px;         
+    }
+  }
+
+  @media only screen and (max-width: 266px){
+    .heading h{
+      font-size: 25px;           
+    }
+  } 
+      
 
 /* Awards section CSS */
 
